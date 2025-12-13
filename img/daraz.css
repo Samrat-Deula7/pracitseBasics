@@ -1,0 +1,214 @@
+
+*{
+ margin: 0%;
+ padding: 0%;  
+}
+.container{
+    width: 100%;
+    height: 100%;
+   background-image: linear-gradient( red,yellow);
+}
+/* This is the first div group */
+.first{
+    background-color:black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.logo{
+   
+   padding-left:100%;
+
+}
+.title{
+width: 30%;
+align-self:center;
+text-align: right;
+font-size: 40px;
+color: aliceblue;
+}
+.search{
+    align-self:center;
+   margin-left: 80px;
+  width: 50%;
+  
+}
+.icon{
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 63%;
+    
+}
+.fa-solid{
+    color: black;
+   font-size:20px ;
+    
+}
+.insearch{
+   width: 50%;
+    font-size: 25px;
+}
+.othericons{
+    display: flex;
+ 
+    align-items: center;
+}
+.inothericons{
+ background-color: aliceblue;
+    z-index: 5px;
+    border-radius: 50%;
+}
+/*this is the second div group*/
+.second{
+    background-color: rgb(255, 0, 0);
+    position: sticky;
+    top:0px;
+    z-index: 2;
+}
+
+.bar{
+    display: flex;
+    height: 50px;
+    margin-left: 30%;
+    
+}
+
+.bar{
+    height: 45px;
+    width: 150px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.bar:hover{
+    background-color:yellow;
+}
+
+/*This is the third div group*/
+.third{
+    overflow: hidden;
+    width: 900px;
+    margin: auto;
+   z-index: 0;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px;
+}
+
+.slide{
+    display: flex;
+    animation:slide  10s infinite;
+    
+}
+
+
+@keyframes slide {
+    0%{transform: translateX(0%);} 
+    25%{transform: translateX(-100%);}
+    50%{transform: translateX(-200%);}
+    75%{transform: translateX(-300%);}
+    100%{transform: translateX(-400%);}
+ }
+
+ /*This is the forth div group*/
+ #feature{
+text-align: center;
+
+
+ }
+ .shoes{
+  border-radius: 10px;
+  height: 250px;
+ }
+
+
+/*This is the fifth div group*/
+.fifth{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+ .buynow{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: rgb(255, 0, 0);
+    box-shadow: 5px 5px 5px black;
+    border-radius: 50px;
+    font-size: 20px;
+    height: 25px;
+    width: 100px;
+ }
+ .buynow:hover{
+    color:aliceblue;
+    font-size: 25px;
+    width: 150px;
+    height:30px ;
+ }
+
+/* This is the sixth div group */
+.ad-container{
+    width: 1150px;
+    height: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:5px;
+    border: 2px solid black;
+}
+ /* This is the seven div group */
+ 
+ .inseven{
+    width: 1150px;
+    height: 350px;
+    border:2px black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.Male, .Female{
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.inleftseven, .inrightseven{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+/* This is the eight div group */
+ .ineight{
+    width: 1150px;
+    height: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:5px;
+   
+ }
+ .advertisement{
+    width: 185px;
+    height: 270px;
+    text-align: center;
+    animation:why 1.5s linear  forwards;
+    animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end:150px ;
+
+}
+@keyframes why {
+    from{opacity: 0; transform: translateY(50px)}
+    to{opacity: 1; transform: translateY(0px)}
+  }
+.advertisement:hover{
+    box-shadow: 1px 1px 1px black;
+}

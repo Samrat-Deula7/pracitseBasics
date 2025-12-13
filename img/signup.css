@@ -1,0 +1,169 @@
+
+*{
+    margin: 0%;
+    padding: 0%;  
+   }
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: #ff6f00;
+    padding: 16px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img {
+    height: 40px;
+}
+.header input {
+    margin-left: 16px;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+.header a {
+    color: white;
+    margin-left: 16px;
+    text-decoration: none;
+}
+.header i {
+    color: white;
+    margin-left: 16px;
+}
+.main {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+.main .form-container {
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+.main h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.main form label {
+    display: block;
+    color: #4b5563;
+    margin-bottom: 4px;
+}
+.main form input, .main form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+.main form .flex {
+    display: flex;
+}
+.main form .flex input {
+    flex: 1;
+}
+.main form .flex button {
+    margin-left: 8px;
+    background-color: #e5e7eb;
+    padding: 8px;
+    border-radius: 4px;
+}
+.main form .checkbox-container {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+}
+.main form .checkbox-container input {
+    margin-right: 8px;
+}
+.main form button {
+    grid-column: span 2;
+    background-color: #ff6f00;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.main form p {
+    grid-column: span 2;
+    color: #6b7280;
+    font-size: 14px;
+}
+.main form p a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+.main .social-login {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 16px;
+}
+.main .social-login p {
+    color: #6b7280;
+}
+.main .social-login .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+.main .social-login .buttons button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.main .social-login .buttons .facebook {
+    background-color: #3b5998;
+}
+.main .social-login .buttons .google {
+    background-color: #db4437;
+}
+.footer {
+    background-color: #f3f4f6;
+    padding: 16px;
+    margin-top: 32px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer h3 {
+    color: #4b5563;
+    font-weight: 600;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 8px;
+}
+.footer ul li a {
+    color: #6b7280;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer .app-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .app-download img {
+    margin-top: 8px;
+}
