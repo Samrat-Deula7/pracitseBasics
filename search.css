@@ -1,9 +1,14 @@
 
+.container{
+    height: 100vh;
+}
 
         .logo {
             text-align: center;
             margin-bottom: 40px;
             animation: fadeIn 0.8s ease;
+                margin-top: 20px;
+
         }
 
         .logo h1 {
