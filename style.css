@@ -40,7 +40,12 @@
     width: 100%;
    }
 
-
+   .loggedIn{
+    display: flex;
+   }
+   .loggedOut{
+    display: none;
+   }
    /* This is the header styling */
 
    #Header{

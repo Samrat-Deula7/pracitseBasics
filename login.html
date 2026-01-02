@@ -90,47 +90,13 @@
         </div>
 
         <div class="footer-cta">
-            Don't have an account? <a href="#">Register here</a>
+            Don't have an account? <a href="signup.html">Register here</a>
         </div>
     </div>
 
    
 
-    <script>
-        const loginForm = document.getElementById('loginForm');
-   
-
-        loginForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            
-            // Check credentials
-            if (username === 'Admin' && password === 'admin1234') {
-                // Store login status in sessionStorage
-                sessionStorage.setItem('isLoggedIn', 'true');
-                sessionStorage.setItem('username', username);
-                
-                // Navigate to user.html
-                window.location.href = 'user.html';
-            } else {
-                // Show error message
-                errorMessage.classList.add('show');
-            }
-        });
-
-        function logout() {
-            // Switch back to login page
-            dashboardPage.classList.remove('active');
-            loginPage.classList.remove('hidden');
-            
-            // Clear form
-            document.getElementById('username').value = '';
-            document.getElementById('password').value = '';
-            errorMessage.classList.remove('show');
-        }
-    </script>
+    
 
 
      <!--This is the footer of the web site-->
@@ -181,7 +147,7 @@
       </footer>
     </div>
     <!--This the closing of the container -->
-
+<script src="login.js"></script>
  <script src="script.js"></script>
 </body>
 </html>
