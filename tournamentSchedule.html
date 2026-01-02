@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="tournamentSchedule.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+      <!--This is the header-->
+    <div id="Header">
+      <div class="title">
+        <h1>Game Zone</h1>
+      </div>
+
+      <div class="nav-bar">
+        <ul class="bar">
+          <li><a class="active" href="index.html" target="_parent">Home</a></li>
+          <li><a href="tournaments.html" target="_parent">Tournaments</a></li>
+          <li><a href="register.html" target="_parent">Register</a></li>
+          <li><a href="contact.html" target="_parent">Contact</a></li>
+          <li>
+            <a href="login.html" target="_parent">Login</a>
+          </li>
+          <li>
+            <a href="search.html" target="_parent"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+      </div>
+
+      <!--This is the mobile div -->
+      <div id="mobile">
+        <a href="search.html" target="_parent"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <i id="mobile-bar" class="fas fa-outdent"></i>
+      </div>
+    </div>
+
+        <!-- Tournament Banner -->
+        <div class="tournament-banner">
+            <h1>Valorant Champions 2025</h1>
+            <div class="tournament-info">
+                <div class="info-item">📅 March 15-20, 2025</div>
+                <div class="info-item">📍 Los Angeles, CA</div>
+            </div>
+            <div class="badges">
+                <span class="badge">Registration Open</span>
+                <span class="badge teams">64 Teams Max</span>
+            </div>
+        </div>
+
+        <!-- Tournament Rules Section -->
+        <div class="rules-section">
+            <h2>Tournament Rules & Format</h2>
+            
+            <div class="rules-grid">
+                <div class="rule-item">
+                    <span class="rule-label">Prize Pool</span>
+                    <span class="rule-value">$100,000 USD</span>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-label">Format</span>
+                    <span class="rule-value">Double Elimination Bracket</span>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-label">Team Size</span>
+                    <span class="rule-value">5 players + 2 substitutes</span>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-label">Registration Fee</span>
+                    <span class="rule-value">$250 per team</span>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-label">Game Version</span>
+                    <span class="rule-value">Latest Competitive Patch</span>
+                </div>
+            </div>
+
+            <div class="tournament-rules">
+                <h3>Tournament Rules</h3>
+                <ul>
+                    <li>All players must be 16 years or older</li>
+                    <li>Teams must check in 30 minutes before match time</li>
+                    <li>Standard competitive map pool applies</li>
+                    <li>No roster changes after registration deadline</li>
+                    <li>All matches will be streamed and recorded</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>Ready to Compete?</h2>
+            <p>Register your team now and secure your spot in the tournament</p>
+            <button class="register-btn">Register Now</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

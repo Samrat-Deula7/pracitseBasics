@@ -9,7 +9,9 @@
     <title>Game Zone</title>
 </head>
   <body>
-    <!--This is the header-->
+    <!-- Login Page -->
+    <div class="login-page" id="loginPage">
+        <!--This is the header-->
     <div id="Header">
       <div class="title">
         <h1>Game Zone</h1>
@@ -42,58 +44,100 @@
       </div>
     </div>
     <!--This is the ending of header-->
-    <header>
-        <h1>Login to Your Account</h1>
-        <p>Access your dashboard and manage your tournaments</p>
-    </header>
 
-    <main>
-        <div class="login-container">
-            <h2>Welcome Back</h2>
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="email">Username or Email</label>
-                    <input 
-                        type="text" 
-                        id="email" 
-                        name="email" 
-                        placeholder="Enter your username"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password" 
-                        placeholder="Enter your password"
-                        required
-                    >
-                </div>
-
-                <button type="submit" class="login-btn">Login</button>
-
-                <div class="forgot-password">
-                    <a href="signup.html">Don't have an account?</a>
-                </div>
-            </form>
+        <div class="header">
+            <h1>Login to Your Account</h1>
+            <p class="subtitle">Access your dashboard and manage your tournaments</p>
         </div>
-    </main>
 
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            
-            if (email && password) {
-                alert('Login successful! (This is a demo)');
-            }
-        });
-    </script>
-     <br /><br />
+        <div class="login-container">
+            <div class="login-card">
+                <h2>Welcome Back</h2>
+                <p>Enter your credentials to continue</p>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username or Email</label>
+                        <input type="text" id="username" placeholder="Enter your username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+                    
+                    <div class="error-message" id="errorMessage">
+                        Invalid username or password. Please try again.
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Login</button>
+                    
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-cta">
+            Don't have an account? <a href="signup.html">Register here</a>
+        </div>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div class="dashboard-page" id="dashboardPage">
+        <div class="dashboard-nav">
+            <div class="title">
+        <h1>Game Zone</h1>
+      </div>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+
+        <div class="dashboard-container">
+            <h1 class="dashboard-title">User Dashboard</h1>
+
+            <div class="user-profile">
+                <div class="avatar">JD</div>
+                <div class="user-info">
+                    <h3>John Doe</h3>
+                    <p>john.doe@example.com</p>
+                    <span class="badge">Pro Player</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">🏆 My Tournaments</h2>
+            <div class="tournaments-grid">
+                <div class="tournament-card">
+                    <h4>Valorant Champions 2025</h4>
+                    <p class="tournament-date">📅 March 15, 2025</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+                
+                <div class="tournament-card">
+                    <h4>MOBA World Cup</h4>
+                    <p class="tournament-date">📅 May 10, 2025</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+
+            <h2 class="section-title">🔔 Notifications</h2>
+            <div class="notifications">
+                <div class="notification-item">
+                    <h5>🔔 Tournament Update</h5>
+                    <p>Valorant Champions 2025 schedule has been updated. Check your email for details.</p>
+                    <span class="notification-time">2 hours ago</span>
+                </div>
+                
+                <div class="notification-item">
+                    <h5>🔔 Payment Received</h5>
+                    <p>Your registration fee for MOBA World Cup has been confirmed.</p>
+                    <span class="notification-time">1 day ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--This is the footer of the web site-->
+      <br /><br />
       <footer id="footer">
         <div class="col">
           <h4>Contact</h4>
@@ -138,6 +182,10 @@
           <img class="pay" src="img/pay.png" alt="" />
         </div>
       </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <!--This the closing of the container -->
+
+ <script src="script.js"></script>
+<script src="login.js"></script>
+</body>
 </html>
